@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-08-14",
+    "scope": "app",
+    "macrostructure": "Workbench",
+    "theme": "custom",
+    "theme_axes": "light-paper / grotesk-sans / cool-green",
+    "enrichment": "none",
+    "brief": "GMaps Intelligence · internal lead-gen dashboard redesign",
+    "design_system": "design.md"
+  }
+]

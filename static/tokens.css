@@ -1,0 +1,55 @@
+/* Hallmark · genre: modern-minimal · macrostructure: Workbench · design-system: design.md · designed-as-app
+ * theme: custom (paper oklch(97.5% 0.005 95) · accent oklch(48% 0.12 165)) · display: Space Grotesk · body: IBM Plex Sans · mono: IBM Plex Mono
+ * axes: light-paper / grotesk-sans / cool-green
+ */
+:root {
+  --color-paper: oklch(97.5% 0.005 95);
+  --color-paper-2: oklch(100% 0 0);
+  --color-ink: oklch(25% 0.01 260);
+  --color-ink-2: oklch(45% 0.01 260);
+  --color-ink-3: oklch(55% 0.01 260);
+  --color-rule: oklch(88% 0.005 95);
+  --color-rule-strong: oklch(78% 0.005 95);
+  --color-accent: oklch(48% 0.12 165);
+  --color-accent-2: oklch(38% 0.12 165);
+  --color-accent-ink: oklch(98% 0.01 165);
+  --color-focus: oklch(60% 0.14 165);
+  --color-hot: oklch(55% 0.19 25);
+  --color-warm: oklch(60% 0.12 70);
+  --color-ok: oklch(50% 0.12 150);
+  --color-accent-soft: oklch(94% 0.03 165);
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius-card: 8px;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 1px;
+}
+
+button[data-pending] {
+  opacity: 0.55;
+  pointer-events: none;
+}
